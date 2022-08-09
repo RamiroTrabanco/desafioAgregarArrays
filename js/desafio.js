@@ -14,11 +14,11 @@ class ProductosStock {
     }
 }
 
-const monitorLg19 = new ProductosStock("Monitor LG 19'", 20000, 100)
-const gpuNvidia3060 = new ProductosStock("Placa De Video PALIT 3060 12 Gb", 120000, 10)
-const proceAMD5600x = new ProductosStock("Procesador AMD Ryzen 5 5600x", 40000, 200)
+const productos = []
 
-const productos = [monitorLg19, gpuNvidia3060, proceAMD5600x]
+productos.push(new ProductosStock("Monitor LG 19'", 20000, 100))
+productos.push(new ProductosStock("Placa De Video PALIT 3060 12 Gb", 120000, 10))
+productos.push(new ProductosStock("Procesador AMD Ryzen 5 5600x", 40000, 200))
 
 function agregarProducto() {
     productos.push(new Productos())
